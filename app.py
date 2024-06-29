@@ -33,7 +33,7 @@ def save_upload_file(upload_file, save_folder="images"):
             f.write(data)
         return save_path
     else:
-        raise ("Image not found.")
+        raise Exception("Image not found.")
 
 
 def delete_file(file_path):
